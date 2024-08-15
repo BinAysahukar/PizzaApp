@@ -3,19 +3,8 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import * as Yup from 'yup';
 
-
-
-
 function AddNewItem(){
-
-
-
-
     const navigate = useNavigate();
-
-
-
-
     const formik = useFormik({
         initialValues: {
             image:'',
@@ -48,14 +37,9 @@ function AddNewItem(){
         },
     });
 
-
-
-
     return (
         <div className="container mt-4">
             <h2>Add New Pizza</h2>
-
-
             <form onSubmit={formik.handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="image" className="form-label">Image URL</label>
@@ -77,11 +61,6 @@ function AddNewItem(){
                         }
                 </div>
 
-
-
-
-
-
                 <div className="mb-3">
                     <label htmlFor="name" className="form-label">Name</label>
                     <input
@@ -100,11 +79,6 @@ function AddNewItem(){
                             ): null
                         }
                 </div>
-
-
-
-
-
 
                 <div className="mb-3">
                     <label htmlFor="price" className="form-label">Price</label>
@@ -125,13 +99,10 @@ function AddNewItem(){
                         }
                 </div>
 
-
                 <button type="submit" className="btn btn-primary">
                     submit
                 </button>
             </form>
-
-
         </div>
     )
 
