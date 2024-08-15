@@ -14,13 +14,7 @@ function App(){
   return (
     <>
     <Menu/>
-    {/* <Home/>
-    <Display/>
-    <About/>
-    <AddNewItem/>
-    <UpdateItem/>
-    <DeleteItem/>
-    <Contact/>     */}
+    <Home/>
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/Display" element={<Display/>}/>
